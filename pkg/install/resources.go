@@ -40,7 +40,7 @@ func imageVersion() string {
 
 // DefaultImage is the default image to use for the Velero deployment and restic daemonset containers.
 var (
-	DefaultImage               = "gcr.io/heptio-images/velero:" + imageVersion()
+	DefaultImage               = "https://cloud.docker.com/repository/docker/jackweldon/velero:" + imageVersion()
 	DefaultVeleroPodCPURequest = "500m"
 	DefaultVeleroPodMemRequest = "128Mi"
 	DefaultVeleroPodCPULimit   = "1000m"
